@@ -55,11 +55,11 @@ class _SelectWidgetState extends State<SelectWidget> {
                       }, child: Text("Alert Dialog",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Navi(),));
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigationBar1(),));
                       }, child: Text("BottomNavigationBar",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => But(),));
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => Button(),));
                       }, child: Text("Button",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
@@ -75,7 +75,7 @@ class _SelectWidgetState extends State<SelectWidget> {
                       }, child: Text("Date",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Dra(),));
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => Drawer1(),));
                       }, child: Text("Drawer",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
@@ -119,7 +119,7 @@ class _SelectWidgetState extends State<SelectWidget> {
                       }, child: Text("Navigator Sc3",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Radi(),));
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => RadioButton(),));
                       }, child: Text("Radio Button",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
@@ -143,7 +143,7 @@ class _SelectWidgetState extends State<SelectWidget> {
                       }, child: Text("Tab Bar",style: TextStyle(fontSize:16 ),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Tec(),));
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => TextEditingCon(),));
                       }, child: Text("Text Editing Controller",style: TextStyle(fontSize:16 ),)),
 
                       TextButton(onPressed: (){

@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class Tec extends StatefulWidget {
-  const Tec({super.key});
+class TextEditingCon extends StatefulWidget {
+  const TextEditingCon({super.key});
 
   @override
-  State<Tec> createState() => _TecState();
+  State<TextEditingCon> createState() => _TextEditingConState();
 }
 
-class _TecState extends State<Tec> {
+class _TextEditingConState extends State<TextEditingCon> {
 
   var a=TextEditingController();
   var b=TextEditingController();

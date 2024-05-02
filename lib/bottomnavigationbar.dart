@@ -5,14 +5,14 @@ import 'package:widgets/date.dart';
 import 'package:widgets/rating_bar.dart';
 import 'package:widgets/time.dart';
 
-class Navi extends StatefulWidget {
-  const Navi({super.key});
+class BottomNavigationBar1 extends StatefulWidget {
+  const BottomNavigationBar1({super.key});
 
   @override
-  State<Navi> createState() => _NaviState();
+  State<BottomNavigationBar1> createState() => _BottomNavigationBar1State();
 }
 
-class _NaviState extends State<Navi> {
+class _BottomNavigationBar1State extends State<BottomNavigationBar1> {
   List aa = [
     Center(
       child: Text(

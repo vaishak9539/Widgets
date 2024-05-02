@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class Radi extends StatefulWidget {
-  const Radi({super.key});
+class RadioButton extends StatefulWidget {
+  const RadioButton({super.key});
 
   @override
-  State<Radi> createState() => _RadiState();
+  State<RadioButton> createState() => _RadioButtonState();
 }
 
-class _RadiState extends State<Radi> {
+class _RadioButtonState extends State<RadioButton> {
   String Genter = ("");
   @override
   Widget build(BuildContext context) {
