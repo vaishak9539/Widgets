@@ -5,6 +5,7 @@ import 'package:widgets/alert_dialog.dart';
 import 'package:widgets/bottomnavigationbar.dart';
 import 'package:widgets/button.dart';
 import 'package:widgets/check_box.dart';
+import 'package:widgets/coustom/coustom_cheking.dart';
 import 'package:widgets/date.dart';
 import 'package:widgets/date_and_time.dart';
 import 'package:widgets/drawer.dart';
@@ -162,6 +163,9 @@ class _SelectWidgetState extends State<SelectWidget> {
                          Navigator.push(context, MaterialPageRoute(builder: (context) => Validation1(),));
                       }, child: Text("Validation",style: TextStyle(fontSize:16 ),)),
 
+                      TextButton(onPressed: (){
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => Cheking(),));
+                      }, child: Text("Coustom Cheking",style: TextStyle(fontSize:16 ),)),
                       
                     ],
                   ),
