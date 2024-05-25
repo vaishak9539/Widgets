@@ -21,9 +21,13 @@ import 'package:widgets/navigator_sc2.dart';
 import 'package:widgets/navigator_sc3.dart';
 import 'package:widgets/radio.dart';
 import 'package:widgets/rating_bar.dart';
-import 'package:widgets/shared_preferences.dart';
+import 'package:widgets/sharedpreference/shared_preferences.dart';
 import 'package:widgets/snack_bar.dart';
 import 'package:widgets/splash_1.dart';
+import 'package:widgets/staggered_grid_view/aligned_gridview.dart';
+import 'package:widgets/staggered_grid_view/masonry_gridview.dart';
+import 'package:widgets/staggered_grid_view/quilted_gridview.dart';
+import 'package:widgets/staggered_grid_view/select_gridview.dart';
 import 'package:widgets/tab_bar.dart';
 import 'package:widgets/text_editing_controller.dart';
 import 'package:widgets/time.dart';
@@ -127,9 +131,10 @@ class _SelectWidgetState extends State<SelectWidget> {
                          Navigator.push(context, MaterialPageRoute(builder: (context) => RatingBar1(),));
                       }, child: Text("Rating Bar",style: TextStyle(fontSize:16 ),)),
               
+                     
                       TextButton(onPressed: (){
                          Navigator.push(context, MaterialPageRoute(builder: (context) => SharedPre(),));
-                      }, child: Text("Shared Preferences",style: TextStyle(fontSize:16 ),)),
+                      }, child: Text("Slider ",style: TextStyle(fontSize:16 ),)),
               
                       TextButton(onPressed: (){
                          Navigator.push(context, MaterialPageRoute(builder: (context) => Snackbar1(),));
@@ -165,8 +170,12 @@ class _SelectWidgetState extends State<SelectWidget> {
 
                       TextButton(onPressed: (){
                          Navigator.push(context, MaterialPageRoute(builder: (context) => Cheking(),));
-                      }, child: Text("Coustom Cheking",style: TextStyle(fontSize:16 ),)),
-                      
+                      }, child: Text("Coustom Cheking",style: TextStyle(fontSize:16 , color: Colors.black),)),
+
+                     TextButton(onPressed: (){
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => SelectedGridView(),));
+                      }, child: Text("Staggered GridView",style: TextStyle(fontSize:16 , color: Colors.black),)),
+
                     ],
                   ),
                 ],

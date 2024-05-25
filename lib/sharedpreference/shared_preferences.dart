@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:widgets/sharedpreference/prefs_login.dart';
 
 class SharedPre extends StatefulWidget {
   const SharedPre({super.key});
@@ -16,8 +17,12 @@ class _SharedPreState extends State<SharedPre> {
   var controllerPhone = TextEditingController();
   var controllerEmail = TextEditingController();
   var controllerPassword = TextEditingController();
+  var size, width, height;
   @override
   Widget build(BuildContext context) {
+    size = MediaQuery.of(context).size;
+    height = size.height;
+    width = size.width;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -36,13 +41,15 @@ class _SharedPreState extends State<SharedPre> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 8, right: 20),
+                padding: const EdgeInsets.only(top: 8, right: 20,left: 15),
                 child: SizedBox(
-                  width: 350,
-                  height: 55,
+                  width: width/1.1,
+                  height: height/18,
                   child: TextFormField(
                     controller: controllerName,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: InputDecoration(border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    )),
                   ),
                 ),
               ),
@@ -58,14 +65,16 @@ class _SharedPreState extends State<SharedPre> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8, right: 20),
+               Padding(
+                padding: const EdgeInsets.only(top: 8, right: 20,left: 15),
                 child: SizedBox(
-                  width: 350,
-                  height: 55,
+                  width: width/1.1,
+                  height: height/18,
                   child: TextFormField(
                     controller: controllerDepartment,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: InputDecoration(border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    )),
                   ),
                 ),
               ),
@@ -82,13 +91,15 @@ class _SharedPreState extends State<SharedPre> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 8, right: 20),
+                padding: const EdgeInsets.only(top: 8, right: 20,left: 15),
                 child: SizedBox(
-                  width: 350,
-                  height: 55,
+                  width: width/1.1,
+                  height: height/18,
                   child: TextFormField(
                     controller: controllerPhone,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: InputDecoration(border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    )),
                   ),
                 ),
               ),
@@ -105,13 +116,15 @@ class _SharedPreState extends State<SharedPre> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 8, right: 20),
+                padding: const EdgeInsets.only(top: 8, right: 20,left: 15),
                 child: SizedBox(
-                  width: 350,
-                  height: 55,
+                  width: width/1.1,
+                  height: height/18,
                   child: TextFormField(
                     controller: controllerEmail,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: InputDecoration(border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    )),
                   ),
                 ),
               ),
@@ -127,14 +140,16 @@ class _SharedPreState extends State<SharedPre> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8, right: 20),
+               Padding(
+                padding: const EdgeInsets.only(top: 8, right: 20,left: 15),
                 child: SizedBox(
-                  width: 350,
-                  height: 55,
+                  width: width/1.1,
+                  height: height/18,
                   child: TextFormField(
                     controller: controllerPassword,
-                    decoration: InputDecoration(border: OutlineInputBorder()),
+                    decoration: InputDecoration(border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    )),
                   ),
                 ),
               ),
@@ -150,32 +165,25 @@ class _SharedPreState extends State<SharedPre> {
                   spref.setString("Phone", controllerPhone.text);
                   spref.setString("Email", controllerEmail.text);
                   spref.setString("Password", controllerPassword.text);
-
-                  var name = spref.getString('Name');
-                  var department = spref.getString('Department');
-                  var phone = spref.getString('Phone');
-                  var email = spref.getString('Email');
-                  var password = spref.getString('Password');
-
-                  print(name);
-                  print(department);
-                  print(phone);
-                  print(email);
-                  print(password);
                 },
-                child: Container(
-                  height: 50,
-                  width: 350,
-                  decoration: BoxDecoration(
-                      color: Colors.blue[400],
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Center(
-                    child: Text(
-                      "Submit",
-                      style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 16,
-                          color: Colors.white),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PrefsLogin(),));
+                  },
+                  child: Container(
+                    height: 50,
+                    width: 350,
+                    decoration: BoxDecoration(
+                        color: Colors.blue[400],
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Center(
+                      child: Text(
+                        "Submit",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: Colors.white),
+                      ),
                     ),
                   ),
                 ),

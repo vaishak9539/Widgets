@@ -8,22 +8,23 @@ class CustomText extends StatelessWidget {
   final Color color;
 
   const CustomText({
-    Key? key,
+    super.key, 
     required this.size,
     required this.weight,
     required this.color,
     required this.text,
-  }) : super(key: key);
+
+  });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: GoogleFonts.inknutAntiqua(
+      style:TextStyle(
         fontSize: size,
         fontWeight: weight,
         color: color,
-      ),
+      )
     );
   }
 }

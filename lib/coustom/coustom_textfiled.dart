@@ -7,6 +7,7 @@ class CustomTextField extends StatelessWidget {
   // final TextEditingController controller;
   // final String? Function(dynamic value) validator;
 
+
   const CustomTextField({
     Key? key,
     required this.labelText,
@@ -34,7 +35,7 @@ class CustomTextField extends StatelessWidget {
       child: TextField(
         // controller: controller,
         onChanged: onChanged,
-        // obscureText: obscureText,
+        // obscureText: o bscureText,
         decoration: InputDecoration(
           labelText: labelText,
           border: OutlineInputBorder(
