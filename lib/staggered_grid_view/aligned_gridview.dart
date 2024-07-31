@@ -23,13 +23,13 @@ class _AlignedGridViewEXState extends State<AlignedGridViewEX> {
         centerTitle: true,
       ),
       body: Container(
-          margin: EdgeInsets.only(left: 5, top: 5, right: 5),
-          child: masonryLayout(context)),
+          margin: EdgeInsets.only(left: 5, top: 5, right: 5,bottom: 5),
+          child: alignedLayout(context)),
     );
   }
 }
 
-Widget masonryLayout(BuildContext context) {
+Widget alignedLayout(BuildContext context) {
   return AlignedGridView.count(
     // gridDelegate:
     //     SliverSimpleGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
@@ -38,13 +38,10 @@ Widget masonryLayout(BuildContext context) {
     crossAxisSpacing: 4,
     crossAxisCount: 3,
     itemBuilder: (context, index) {
-      return SizedBox(
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: Image.network(
-            // imageUri[index],
-            "http://source.unsplash.com/random?sig=$index", fit: BoxFit.cover,
-          ),
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Image.network(
+          "http://source.unsplash.com/random?sig=$index",fit: BoxFit.cover
         ),
       );
     },

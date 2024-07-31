@@ -25,7 +25,7 @@ class _MasonryGridViewEXState extends State<MasonryGridViewEX> {
         centerTitle: true,
       ),
       body: Container(
-        margin: EdgeInsets.only(left: 5,top: 5,right: 5),
+        margin: EdgeInsets.only(left: 5,top: 5,right: 5,bottom: 5),
         child: masonryLayout(context)),
     );
   }
@@ -35,17 +35,15 @@ Widget masonryLayout(BuildContext context) {
   return MasonryGridView.builder(
     gridDelegate:
         SliverSimpleGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-    itemCount: 42,
+    itemCount: 20,
     mainAxisSpacing: 4,
     crossAxisSpacing: 4,
     itemBuilder: (context, index) {
-      return SizedBox(
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: Image.network(
-            // imageUri[index],
-            "http://source.unsplash.com/random?sig=$index"
-          ),
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Image.network(
+          // imageUri[index],
+          "http://source.unsplash.com/random?sig=$index"
         ),
       );
     },
