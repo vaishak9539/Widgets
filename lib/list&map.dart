@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class New extends StatefulWidget {
-  const New({super.key});
+class ListAndMap extends StatefulWidget {
+  const ListAndMap({super.key});
 
   @override
-  State<New> createState() => _NewState();
+  State<ListAndMap> createState() => _ListAndMapState();
 }
 
-class _NewState extends State<New> {
+class _ListAndMapState extends State<ListAndMap> {
 
   List a=[
     {'name': 'manjima', 'mobile': 1234567890, 'service': 'electrical'},

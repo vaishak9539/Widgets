@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/alert_dialog.dart';
 import 'package:widgets/circular_menu.dart';
+import 'package:widgets/curved_navigation_bar.dart';
 import 'package:widgets/hero_widget.dart';
 import 'package:widgets/scrollbar.dart';
 import 'package:widgets/search.dart';
@@ -65,173 +66,181 @@ class _SelectWidgetState extends State<SelectWidget> {
                   Column(
                     children: [
                       TextButton(onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => Alert(),));
+                        Navigator.pushNamed(context, "AlertDialogBox");
                       }, child: Text("Alert Dialog",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigationBar1(),));
+                         Navigator.pushNamed(context, "BottomNavigationBar");
                       }, child: Text("BottomNavigationBar",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Button(),));
+                         Navigator.pushNamed(context, "ButtonTyp");
                       }, child: Text("Button",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Check(),));
+                         Navigator.pushNamed(context, "CheckBox");
                       }, child: Text("Check Box",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => DateAndTime()));
+                         Navigator.pushNamed(context, "Date & Time");
                       }, child: Text("Date & Time",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Date() ,));
+                         Navigator.pushNamed(context, "Date");
                       }, child: Text("Date",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => SharedPre() ,));
+                         Navigator.pushNamed(context, "SharedPreference");
                       }, child: Text("SharedPreference",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Drawer1(),));
+                         Navigator.pushNamed(context, "Drawer");
                       }, child: Text("Drawer",style: TextStyle(fontSize:16, color: Colors.black ),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Drop(),));
+                         Navigator.pushNamed(context, "Drop Down Button");
                       }, child: Text("Drop Down Button",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Expand(),));
+                         Navigator.pushNamed(context, "Expanded");
                       }, child: Text("Expanded",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Imag(),));
+                         Navigator.pushNamed(context, "Image Picker");
                       }, child: Text("Image Picker",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => ListT(),));
+                         Navigator.pushNamed(context, "List Tile");
                       }, child: Text("List Tile",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => MyWidget(),));
+                         Navigator.pushNamed(context, "List View Separater");
                       }, child: Text("List View Separater",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => New(),));
+                         Navigator.pushNamed(context, "ListAndMap");
                       }, child: Text("List & Map",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Mquery(),));
+                         Navigator.pushNamed(context, "Media Query");
                       }, child: Text("Media Query",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Sc1(),));
+                         Navigator.pushNamed(context, "Navigator Sc1");
                       }, child: Text("Navigator Sc1",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Sc2(),));
+                         Navigator.pushNamed(context, "Navigator Sc2");
                       }, child: Text("Navigator Sc2",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Sc3(),));
+                         Navigator.pushNamed(context, "Navigator Sc3");
                       }, child: Text("Navigator Sc3",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => RadioButton(),));
+                         Navigator.pushNamed(context, "Radio Button");
                       }, child: Text("Radio Button",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => RatingBar1(),));
+                         Navigator.pushNamed(context, "RatingBar");
                       }, child: Text("Rating Bar",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                      
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => SliderWithPackage(),));
+                         Navigator.pushNamed(context, "Slider");
                       }, child: Text("Slider ",style: TextStyle(fontSize:16 , color: Colors.black),)),
               
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Snackbar1(),));
+                         Navigator.pushNamed(context, "Snack Bar");
                       }, child: Text("Snack Bar",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => SplashScreen(),));
+                         Navigator.pushNamed(context, "Splash");
                       }, child: Text("Splash",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => TabPage(),));
+                         Navigator.pushNamed(context, "Tab Bar");
                       }, child: Text("Tab Bar",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => TextEditingCon(),));
+                         Navigator.pushNamed(context, "Text Editing Controller");
                       }, child: Text("Text Editing Controller",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Time(),));
+                         Navigator.pushNamed(context, "Time");
                       }, child: Text("Time",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Toast1(),));
+                         Navigator.pushNamed(context, "Tost Message");
                       }, child: Text("Tost Message",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => UrlLauncher(),));
+                         Navigator.pushNamed(context, "Url Launcher");
                       }, child: Text("Url Launcher",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Validation1(),));
+                         Navigator.pushNamed(context, "Validation");
                       }, child: Text("Validation",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                       TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Cheking(),));
+                         Navigator.pushNamed(context, "Coustom Cheking");
                       }, child: Text("Coustom Cheking",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => SelectedGridView(),));
+                         Navigator.pushNamed(context, "Staggered GridView");
                       }, child: Text("Staggered GridView",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => Swiper1(),));
+                         Navigator.pushNamed(context, "Swaiper");
                       }, child: Text("Swaiper",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => StepperEx(),));
+                         Navigator.pushNamed(context, "Stepper");
                       }, child: Text("Stepper",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => ExpansionTileEx(),));
+                         Navigator.pushNamed(context, "ExpansionTile");
                       }, child: Text("ExpansionTile",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => PopupMenuButtonEx(),));
+                         Navigator.pushNamed(context, "PopupMenuButton");
                       }, child: Text("PopupMenuButton",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => SearchEX(),));
+                         Navigator.pushNamed(context, "Search");
                       }, child: Text("Search",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => TextSpanEX(),));
+                         Navigator.pushNamed(context, "TextSpan");
                       }, child: Text("TextSpan",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => OverFlowBoxEX(),));
+                         Navigator.pushNamed(context, "SizedOverFlowBox");
                       }, child: Text("SizedOverFlowBox",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => ScrollBarEx(),));
+                         Navigator.pushNamed(context, "ScrollBar");
                       }, child: Text("ScrollBar",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => HeroWidget(),));
+                         Navigator.pushNamed(context, "HeroWidget");
                       }, child: Text("HeroWidget",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) => CircularMenuEX(),));
+                         Navigator.pushNamed(context, "Circular Menu");
                       }, child: Text("Circular Menu",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                      TextButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  SliderWithPackage(),));
+                         Navigator.pushNamed(context, "Slider With Package");
                       }, child: Text("Slider With Package",style: TextStyle(fontSize:16 , color: Colors.black),)),
+
+                     TextButton(onPressed: (){
+                         Navigator.pushNamed(context, "Curved Navigation Bar");
+                      }, child: Text("Curved Navigation Bar",style: TextStyle(fontSize:16 , color: Colors.black),)),
+
+                     TextButton(onPressed: (){
+                         Navigator.pushNamed(context, "MapSample");
+                      }, child: Text("MapSample",style: TextStyle(fontSize:16 , color: Colors.black),)),
 
                     ],
                   ),

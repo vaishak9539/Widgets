@@ -61,7 +61,7 @@ class _ListTState extends State<ListT> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 70),
+                          padding: const EdgeInsets.only(left: 40),
                           child: Row(
                             children: [
                               Text("Chats",
@@ -79,7 +79,7 @@ class _ListTState extends State<ListT> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 70),
+                                padding: const EdgeInsets.only(left: 40),
                                 child: Row(
                                   children: [
                                     Text(

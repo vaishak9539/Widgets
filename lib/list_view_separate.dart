@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class Separater extends StatefulWidget {
+  const Separater({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<Separater> createState() => _SeparaterState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _SeparaterState extends State<Separater> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

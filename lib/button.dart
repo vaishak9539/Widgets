@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Button extends StatefulWidget {
@@ -17,6 +19,7 @@ class _ButtonState extends State<Button> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton(onPressed: () {}, child: Text("Clik")),
+
                 FloatingActionButton(
                   onPressed: () {},
                   child: Icon(Icons.message),
@@ -29,8 +32,11 @@ class _ButtonState extends State<Button> {
 
                   //! tooltip: "Messages",
                 ),
+
                 ElevatedButton(onPressed: () {}, child: Text("send")),
+
                 IconButton(onPressed: () {}, icon: Icon(Icons.call)),
+
                 InkWell(
                   onTap: () {},
                   child: Container(
@@ -46,6 +52,7 @@ class _ButtonState extends State<Button> {
                     ),
                   ),
                 ),
+                
                 FloatingActionButton.extended(
                   onPressed: () {},
                   label: Text("Share"),

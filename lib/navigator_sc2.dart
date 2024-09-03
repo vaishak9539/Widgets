@@ -16,24 +16,29 @@ class _Sc2State extends State<Sc2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:  SafeArea(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Screen 2"),
-            ElevatedButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (ctx){
-                    return Sc3();
-                },),);
-              },
-               child: Text("Go to screen 3")),
-
-               ElevatedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (ctx){
-                  return Sc1();
-                }));
-               },
-                child: Text("Go back"))
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Screen 2"),
+                ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (ctx){
+                        return Sc3();
+                    },),);
+                  },
+                   child: Text("Go to screen 3")),
+            
+                   ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (ctx){
+                      return Sc1();
+                    }));
+                   },
+                    child: Text("Go back"))
+              ],
+            ),
           ],
         ),
       ),
